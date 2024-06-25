@@ -5,5 +5,23 @@
     <br />
     <br />
     hej blokchain!
+    {{licznik}}
+    <button @click="podbij"> Podbij</button>
   </main>
 </template>
+
+<script>
+export default{
+	data(){
+		return{
+			licznik: 0
+
+		}
+	},
+	methods: {
+		podbij(){
+			this.licznik++
+		}
+	}
+}
+</script>
